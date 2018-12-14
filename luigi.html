@@ -47,7 +47,25 @@
 
 
 
-<h1>Luigi's Pizza: Even your Mama would be proud!</h1> 
+<h1>Luigi's Pizza: Even your Mama would be proud!
+<br>
+<script>
+
+
+function fakecounter(){
+
+//decrease/increase counter value (depending on perceived popularity of your site!)
+var decrease_increase=10
+
+var counterdate=new Date()
+var currenthits=counterdate.getTime().toString()
+currenthits=parseInt(currenthits.substring(2,currenthits.length-4))+decrease_increase
+
+document.write("You are visitor # <b>"+currenthits+"</b> to my site!")
+}
+fakecounter()
+</script>
+</h1> 
 <br>
 <br>
 <div id="directions" class="column"> 
@@ -222,6 +240,8 @@
 
 
 </div>
+
+
 
 
 
