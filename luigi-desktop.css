@@ -1,0 +1,46 @@
+.header, nav, .footer {
+  clear: both;
+}
+.column {
+  margin: 10px 1.04% 0 0;
+}
+  
+
+.header {
+  height: 200px;
+  background-image: url(images/200.jpg);
+
+}
+
+.headerImage {
+height: 300px;
+background-size: cover;
+background:url(images/200.jpg) no-repeat;
+width: auto;
+
+}
+
+
+#directions {
+  width: 25%;
+  float: left;
+  font-weight: bold;
+}
+
+#aboutus {
+  width: 25%;
+  float: right;
+  font-weight: bold;
+}
+#menu {
+  margin-right: 27.08%;
+  margin-left: 26.04%;
+  width: 47.9%;
+  font-weight: bold;
+}
+ 
+ #menu img:hover {
+  transition: .5s;
+  transform: scale(1.25);
+  padding: 75px;
+}

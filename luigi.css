@@ -1,0 +1,197 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+* {/* sets everything to zero so easier to adjust*/
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+/* THIS SECTION IS TO ADJUST ELEMENTS INSIDE BODY */
+
+
+
+body { /* sets font and background type*/
+	background: #B1A296;
+	color: white;
+	font: "Lato", Arial, sans-serif;
+  font-size: 1em;
+}
+
+
+a, a:visited { /* makes the color of visited links and links the same*/
+  color: white;
+}
+
+
+
+h1 {/* sets what titles should look like*/
+  font-size: 1.75em;
+	border: solid #557A95;
+	border-width: 2px 0;
+	padding: 0.25em;
+  text-align: center;
+  font-variant: small-caps;
+  color: #5d5c61;
+}
+
+
+h2 {/* sets what secondary tittles should look like*/
+  text-align: center;
+  font-variant: small-caps;
+  text-decoration: underline;
+  color: #5d5c61;
+}
+h3 {
+  font-size: 1.2em;
+  text-align: center;
+  font-variant: small-caps;
+  color: white;
+
+}
+p { /*gives text breathing room */
+  margin: 0.5em 0.25em;
+  font-size: 1em;
+  padding: 0.25em;
+  text-align: center;
+  font-variant: small-caps;
+}
+
+
+#directions ul li {/* sets the unordered list and items in directions section*/
+  font-weight: bold;
+  margin: 0.5em 1em 0.5em 0;
+}
+
+
+#directions ul li:before {/*sets the arrow before the actual list item (➢ instead of •)*/
+  content: "➢";
+  position: relative;
+  left: 0;
+}
+
+
+.names { /*sets the style the names of sections should be, didn't want to use h3 etc*/
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+
+.line { /*creates a dashed black line wherever needed */
+border-bottom: 1px dashed #557A95;
+}
+
+
+
+.toppings {
+font-size: 13px;
+  font-style: italic;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+
+
+
+
+
+
+
+nav li a {/*sets style for the list item and the a href */
+  color: #f9f3e9;
+  font-variant: small-caps;
+  text-decoration: none;
+ 
+}
+
+nav ul li {  /*sets style for the nav bar*/
+  background-color:#5d5c61;
+  border-bottom: 2px solid #594846;
+  text-align: center;
+  display: block;
+  float: left;
+  padding: 0.25em 0;
+ 
+}
+
+.footer { /* sets style for the footer */
+  background-color: #f9f3e9;
+  color: #f9f3e9;
+  text-align: left;
+  padding: .5em 0;
+  font-style: italic;
+  border: 10px solid black;
+}
+
+
+
+/* THIS SECTION IS TO MAKE SURE STRUCTURE IS CORRECT */
+
+
+.footer, .header, .headerImage, nav, body {/*makes sure it expands to fill all horizontal space within its containing block*/
+  width: auto;
+}
+
+
+nav {/* makes sure that the nav doesnt go below 30px */
+  min-height: 30px;
+ overflow: hidden;
+ position:fixed;
+ top: 0;
+ width: 100%;
+
+}
+
+
+nav ul li {/*  4 titles each taking 25% of the nav*/
+  width: 25%; 
+
+
+}
+
+
+#menu {/*sets the margin top for menu of 10px so it doesnt look to squished with title and aligns text straight down*/
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+#menu li{
+list-style: none;
+}
+
+
+img {/*makes sure picture doesnt get too big and overlap*/
+  max-width: 100%;
+  
+}
+
+
+#menu img {
+  height: 35%;
+  width: 35%;
+  
+}
+
+
+
+
+
+.video {/* sets style for the video*/
+ overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+
+.video iframe {/* used to embed another document within the current HTML document */
+   left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+
